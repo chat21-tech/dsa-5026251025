@@ -13,6 +13,14 @@ public class ColourPrint extends PrintJob  {
         return firstPages * 1500 + extraPages * 1000 + 2000;
     }
 
+    // public int calculateCharge() {
+    //     int pages = getpages();
+    //     int printingCost ;
+    //     if(pages <= 0) {
+    //         printingCost = pages * 1500
+    //     }
+    // }
+
     @Override
     public String label() {
         return "Colour";

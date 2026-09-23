@@ -21,12 +21,17 @@ public class Main {
                 String id = scanner.next();
                 int pages = scanner.nextInt();
 
+                // PrintJob job;
+
                 if (type.equals("MONO")) {
                     jobs.add(new MonoPrint(id, pages));
                 } else if (type.equals("COLOUR")) {
                     jobs.add(new ColourPrint(id, pages));
                 }
             }
+            // jobs.add(job);
+            // scanner.close();
+
         } catch (FileNotFoundException e) {
             System.out.println("File jobs.txt tidak ditemukan");
             return;

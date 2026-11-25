@@ -22,7 +22,6 @@ public class Main {
         if (root == null) {
             return false;
         }
-
         if (target == root.data) {
             return true;
         } else if (target < root.data) {
